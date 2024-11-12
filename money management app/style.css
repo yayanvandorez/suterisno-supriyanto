@@ -1,0 +1,390 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "robotoslap";
+    src:url(font/robotoslap/);
+}
+@font-face {
+    font-family: "robotoslap";
+    src:url(font/robotoslap/);
+
+}
+@font-face {
+    font-family: "robotoslap";
+    src:url(font/robotoslap/);
+}
+/* sidebar */
+.sidebar {
+    position: relative;
+    background-color: #865cff;
+    color: white;
+    width: 175px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 15px;
+    font-family: robotoslap;
+}
+
+
+
+.menu {
+    margin: 10px 0px 0px 25px;
+    width: 100px;
+    height: 30px;
+    padding: 10px 0px 0px 50px;
+    background-color: #865cff;
+    color: white;
+    border-radius: 10px 0px 0px 10px;
+    cursor: pointer;
+
+}
+
+.dashboard {
+    margin-top: 150px;
+}
+/* sidebar */
+
+/* dashboard */
+.main-dashboard {
+    position: relative;
+    margin: -695px 0px 0px 200px;
+    width: 85vw;
+    height: 100vh;
+    background-color: white;
+    overflow: hidden;
+}
+
+.user-title{
+    position: absolute;
+    font-family: robotoslap;
+    color: #707070;
+    margin: 80px 0px 0px 20px;
+}
+
+.user-title p {
+    font-size: 35px;
+}
+
+.month-dashboard {
+    position: absolute;
+    font-family: robotoslap;
+    color: #707070;
+    margin: 80px 0px 0px 20px;
+
+}
+.month-dashboard p {
+    font-size: 20px;
+}
+
+.triangle{
+    position: absolute;
+    margin: -10px 0px 0px 85px;
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 15px solid #555;
+}
+
+.dropdown-months{
+    position: absolute;
+    display: none;
+    margin: 100px 0px 0px 100px;
+    font-family: robotoslap;
+    width: fit-content;
+    height: fit-content;
+}
+
+.dropdown-months ul {
+    text-align: center;
+    margin: 10px;
+}
+
+.dropdown-months ul li a{
+    text-decoration: none;
+    color: #707070;
+}
+
+.dropdown-months ul li a:hover {
+    color: #865cff;
+}
+
+.dropdown-months ul li:marker{
+    color: white;
+}
+
+.month-dashboard:hover + .dropdown-months{
+    display: block;
+
+}
+.dropdown-months:hover {
+    display: block;
+}
+
+/* box */
+
+.white-small-box{
+    position: absolute;
+    background: white;
+    padding: 20px;
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px rgb(79,77,77);
+    font-family: "robotoslap";
+    color: #707070;
+}
+
+.white-small-box p{
+    margin-bottom: 5px;
+}
+
+.total-balance {
+    margin: 150px 0px 0px 20px;
+}
+
+.total-balance p,h2{
+    text-align: center;
+}
+
+.target-saving{
+    margin: 270px 0px 0px 20px;
+}
+
+.target-saving p,h2{
+    text-align: center;
+}
+
+ .circle-little {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    background: #4ef275;
+    margin-top: -10px;
+    opacity: 50px;
+ 
+
+}
+
+ .white-large-box {
+    position: absolute;
+    background: white;
+    padding: 20px;
+    width: 300px;
+    height: 200px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px rgb(79,77,77);
+    font-family: robotoslap;
+    color: #707070;
+ }
+
+.incomes-progress{
+    margin: 150px 0px 0px 300px;
+}
+.spending-progress {
+    margin: 150px 0px 0px 680px;
+}
+
+.circle-3 {
+    background: white;
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    margin: 10px 0px 0px 0px;
+}
+
+.round{
+    margin: 10px;
+}
+
+.round strong {
+    position: absolute;
+    margin: 25px 0px 0px -60px;
+    font-size: 20px;
+}
+.round span {
+    position: absolute;
+    margin-left: 100px 0px 0px -65px;
+    text-align: center;
+}
+
+#round-2{
+    margin-left: -75px !important;
+}
+
+.white-large-box h2{
+    margin-top: 60;
+}
+/* box */
+
+
+
+/*table*/
+
+table {
+    position: absolute;
+    font-family: "robotoslap";
+    top: 57%;
+    left: 2%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.fixed-header{
+    width: 1000px;
+    text-align: center;
+    border-radius: 10px;
+    border-collapse: collapse;
+}
+
+.fixed-header thead tr th {
+    text-align: center; 
+}
+
+.fixed-header tbody tr td {
+    text-align: center;
+    border-bottom: 1px solid #555;
+}
+
+.fixed-header tbody {
+    display: block;
+    width: 100%;
+    height: 200px;
+    font-size: 15px;
+    overflow: auto;
+}
+
+
+.fixed-header thead{
+    display: block;
+    text-align: center !important;
+}
+
+.fixed-header thead {
+    background: white;
+    color: #707070;
+    border-bottom: 2px #777 solid;
+    border-radius: 10px;
+}
+
+.fixed-header th,.fixed-header td{
+    padding: 5px;
+    text-align: left;
+    width: 200px;
+}
+
+.table-body::-webkit-scrollbar{
+    display: none;
+}
+
+
+/*table*/
+
+/* dashboard */
+
+/*incomes*/
+.main-incomes{
+
+    position: relative;
+    display: none;
+    margin: -695px 0px 0px 200px;
+    width: 85vw;
+    height: 100vh;
+    background-color: white;
+    overflow: hidden; 
+
+}
+
+.white-large-x-box{
+    position: absolute;
+    background: white;
+    padding: 20px;
+    width: 400px;
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px rgb(79,77,77);
+    font-family: robotoslap;
+    color: #707070;
+}
+
+.input-incomes{
+    margin: 20px 0px 0px 20px;
+}
+
+.table-incomes{
+    margin: 20px 0px 0px 500px;
+}
+
+input[type='text']{
+    width: 100px;
+    padding: 12px 20px;
+    margin: 2px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: green;
+    color: white;
+    width: 70px;
+    height: 30px;
+    margin: 20px 0px 0px 325px;
+    border:none;
+    border-radius: 5px;
+}
+
+.fixed-header-incomes{
+    width: 400px;
+    text-align: center;
+    border-radius: 10px;
+    height: 300px;
+    border-collapse: collapse;
+    margin: -170px 0px 0px 10px;
+}
+.fixed-header thead tr th {
+    text-align: center; 
+}
+
+.fixed-header tbody tr td {
+    text-align: center;
+    border-bottom: 1px solid #555;
+}
+
+.fixed-header tbody {
+    display: block;
+    width: 100%;
+    height: 270px;
+    font-size: 15px;
+    overflow: auto;
+}
+
+
+.fixed-header thead{
+    display: block;
+    text-align: center !important;
+}
+
+.fixed-header-incomes , thead {
+    background: white;
+    color: #707070;
+    border-bottom: 2px #777 solid;
+    border-radius: 10px;
+}
+
+.fixed-header-incomes ,.fixed-header-incomes td{
+    padding: 5px;
+    text-align: left;
+    width: 200px;
+}
+
+.table-body::-webkit-scrollbar{
+    display: none;
+/* tutup incomes*/
